@@ -2,7 +2,7 @@
 import paho.mqtt.client as mqtt
 
 client = mqtt.Client()
-client.connect('localhost', 1883)
+client.connect('localhost', 1883, keepalive = 65535)
 
 def on_connect(client, userdata, flags, rc):
     print("Connected to a broker!")

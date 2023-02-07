@@ -1,0 +1,44 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		splash_mobile
+	 *	@date 		Monday 13th of February 2023 12:28:03 PM
+	 *	@title 		ui
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/splash_mobile" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+			<View   android:id="@+id/_bg__splash_mobile"
+				android:background="@drawable/_bg__splash_mobile_shape"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="414dp"
+				android:layout_height="736dp" />
+
+			<ImageView android:id="@+id/rectangle_33"
+				android:src="@drawable/rectangle_33"
+				android:contentDescription="rectangle_33"
+				 android:layout_marginStart="41dp"
+				android:layout_marginTop="202dp"
+				android:layout_width="332dp"
+				android:layout_height="332dp" />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

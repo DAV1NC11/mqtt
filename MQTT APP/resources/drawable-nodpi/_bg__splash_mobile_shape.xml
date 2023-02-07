@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- _bg__splash_mobile from your XD file. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle" >
+	<solid android:color="@color/_bg__splash_mobile_color" />
+	<gradient android:angle="315" android:type="radial" android:startColor="#ff37324f" android:endColor="#ff0e0b1c" />
+</shape>
+

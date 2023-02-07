@@ -1,0 +1,130 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		getting_started_mobile
+	 *	@date 		Monday 13th of February 2023 12:38:05 PM
+	 *	@title 		ui
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/getting_started_mobile" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+			<View   android:id="@+id/_bg__getting_started_mobile"
+				android:background="@drawable/_bg__getting_started_mobile_shape"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="414dp"
+				android:layout_height="736dp" />
+
+			<View   android:id="@+id/rectangle_34"
+				android:background="@drawable/rectangle_34_shape"
+				 android:layout_marginStart="38dp"
+				android:layout_marginTop="266dp"
+				android:layout_width="343dp"
+				android:layout_height="55dp" />
+
+			<View   android:id="@+id/rectangle_35"
+				android:background="@drawable/rectangle_35_shape"
+				 android:layout_marginStart="38dp"
+				android:layout_marginTop="333dp"
+				android:layout_width="343dp"
+				android:layout_height="55dp" />
+
+			<View   android:id="@+id/rectangle_36"
+				android:background="@drawable/rectangle_36_shape"
+				 android:layout_marginStart="38dp"
+				android:layout_marginTop="576dp"
+				android:layout_width="343dp"
+				android:layout_height="62dp" />
+
+			<TextView android:id="@+id/username"
+				android:fontFamily="Inter"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="25sp"
+				android:textColor="@color/username_color"
+				android:layout_marginLeft="54dp"
+				android:layout_marginTop="277dp"
+				android:layout_width="135dp"
+				android:layout_height="47.5dp"
+				android:text="@string/username_string"
+				 />
+
+			<TextView android:id="@+id/password"
+				android:fontFamily="Inter"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="25sp"
+				android:textColor="@color/password_color"
+				android:layout_marginLeft="56dp"
+				android:layout_marginTop="344dp"
+				android:layout_width="133dp"
+				android:layout_height="47.5dp"
+				android:text="@string/password_string"
+				 />
+
+			<TextView android:id="@+id/login"
+				android:fontFamily="Inter"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="25sp"
+				android:textColor="@color/login_color"
+				android:layout_marginLeft="169dp"
+				android:layout_marginTop="591dp"
+				android:layout_width="84dp"
+				android:layout_height="47.5dp"
+				android:text="@string/login_string"
+				 />
+
+			<TextView android:id="@+id/help"
+				android:fontFamily="Inter"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:textColor="@color/password_color"
+				android:layout_marginLeft="71dp"
+				android:layout_marginTop="677dp"
+				android:layout_width="59dp"
+				android:layout_height="38dp"
+				android:text="@string/help_string"
+				 />
+
+			<TextView android:id="@+id/register"
+				android:fontFamily="Inter"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:textColor="@color/password_color"
+				android:layout_marginLeft="259dp"
+				android:layout_marginTop="677dp"
+				android:layout_width="93dp"
+				android:layout_height="38dp"
+				android:text="@string/register_string"
+				 />
+
+			<ImageView android:id="@+id/rectangle_34_ek1"
+				android:src="@drawable/rectangle_34_ek1"
+				android:contentDescription="rectangle_34_ek1"
+				 android:layout_marginStart="108dp"
+				android:layout_marginTop="17dp"
+				android:layout_width="202dp"
+				android:layout_height="202dp" />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

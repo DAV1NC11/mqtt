@@ -1,0 +1,238 @@
+
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 10, in <module>
+    
+KeyboardInterrupt
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 12, in <module>
+    scan()
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 5, in scan
+    nearby_devices = bluetooth.find_devices(lookup_names=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'bluetooth' has no attribute 'find_devices'. Did you mean: 'find_service'?
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> nearby_devices = bluetooth.discover_devices(lookup_names=False)
+lookup_names=False : The term 'lookup_names=False' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:45
++ nearby_devices = bluetooth.discover_devices(lookup_names=False)
++                                             ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (lookup_names=False:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> nearby_devices = bluetooth.discover_devices(lookup_names=False)
+lookup_names=False : The term 'lookup_names=False' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:45
++ nearby_devices = bluetooth.discover_devices(lookup_names=False)
++                                             ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (lookup_names=False:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> pip install bluez-peripheral
+Collecting bluez-peripheral
+  Downloading bluez_peripheral-0.1.7-py3-none-any.whl (24 kB)
+Collecting dbus-next
+  Downloading dbus_next-0.2.3-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 kB 8.2 kB/s eta 0:00:00
+Installing collected packages: dbus-next, bluez-peripheral
+Successfully installed bluez-peripheral-0.1.7 dbus-next-0.2.3
+
+[notice] A new release of pip available: 22.3 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 1, in <module>
+    from bluetooth.ble import DiscoveryService
+  File "C:\Python311\Lib\site-packages\bluetooth\ble.py", line 1, in <module>
+    from gattlib import *
+ModuleNotFoundError: No module named 'gattlib'
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> pip install gattlib          
+Collecting gattlib
+  Downloading gattlib-0.20210616.tar.gz (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 13.0 kB/s eta 0:00:00
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [6 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\j\AppData\Local\Temp\pip-install-jrsrgu9f\gattlib_2ab719e1d4f74af3992e67bbaca0886e\setup.py", line 86, in <module>    
+          raise OSError("Not supported OS")
+      OSError: Not supported OS
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip available: 22.3 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> pip install bleak
+Collecting bleak
+  Downloading bleak-0.19.5-py3-none-any.whl (132 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.9/132.9 kB 30.2 kB/s eta 0:00:00
+Collecting async-timeout<5,>=3.0.0
+  Using cached async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting bleak-winrt<2.0.0,>=1.2.0
+  Downloading bleak_winrt-1.2.0-cp311-cp311-win_amd64.whl (524 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 524.9/524.9 kB 15.1 kB/s eta 0:00:00
+Installing collected packages: bleak-winrt, async-timeout, bleak
+Successfully installed async-timeout-4.0.2 bleak-0.19.5 bleak-winrt-1.2.0
+
+[notice] A new release of pip available: 22.3 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:9: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 9, in <module>
+    run()
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 6, in run
+    for d in devices:
+TypeError: 'coroutine' object is not iterable
+sys:1: RuntimeWarning: coroutine 'BleakScanner.discover' was never awaited
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:9: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+10:02:12:65:12:36: TNK LEVEL SENSOR
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:12: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:14: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:18: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 19, in <module>
+    loop.run_until_complete(connect())
+  File "C:\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 12, in connect
+    await client.connect()
+  File "C:\Python311\Lib\site-packages\bleak\__init__.py", line 471, in connect
+    return await self._backend.connect(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\bleak\backends\winrt\client.py", line 413, in connect
+    self.services = get_services_task.result()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\bleak\backends\winrt\client.py", line 643, in get_services
+    services: Sequence[GattDeviceService] = _ensure_success(
+                                            ^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\bleak\backends\winrt\client.py", line 120, in _ensure_success
+    raise BleakError(f"{fail_msg}: Unreachable")
+bleak.exc.BleakError: Could not get GATT services: Unreachable
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:18: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+10:02:12:65:12:36: TNK LEVEL SENSOR
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:19: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 20, in <module>
+    loop.run_until_complete(run())
+  File "C:\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 11, in run
+    await client.connect()
+  File "C:\Python311\Lib\site-packages\bleak\__init__.py", line 471, in connect
+    return await self._backend.connect(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\bleak\backends\winrt\client.py", line 244, in connect
+    raise BleakDeviceNotFoundError(
+bleak.exc.BleakDeviceNotFoundError: Device with address 10:02:12:65:12:35 was not found.
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:19: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:19: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+10:02:12:65:12:36: TNK LEVEL SENSOR
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/ble.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py:19: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+10:02:12:65:12:35: TNK LEVEL SENSOR
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 20, in <module>
+    loop.run_until_complete(run())
+  File "C:\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\ble.py", line 12, in run
+    services = await client.discover_services()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BleakClient' object has no attribute 'discover_services'
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/update.py
+Services:
+00001800-0000-1000-8000-00805f9b34fb (Handle: 1): Generic Access Profile
+00001801-0000-1000-8000-00805f9b34fb (Handle: 6): Generic Attribute Profile
+0000ffe0-0000-1000-8000-00805f9b34fb (Handle: 7): Vendor specific
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/update.py
+Services:
+00001800-0000-1000-8000-00805f9b34fb (Handle: 1): Generic Access Profile
+00001801-0000-1000-8000-00805f9b34fb (Handle: 6): Generic Attribute Profile
+0000ffe0-0000-1000-8000-00805f9b34fb (Handle: 7): Vendor specific
+0000FFE1-0000-1000-8000-00805F9B34FB (Handle: 9): Custom Characteristic --R, W, N, WnR
+0x2902					 (Handle: 10):Client Characteristic Configuration --R
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/get_data.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\get_data.py:27: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\get_data.py", line 28, in <module>
+    loop.run_until_complete(run(mac_address, service_uuid, characteristic_uuid))
+  File "C:\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\get_data.py", line 5, in run
+    async with BleakClient(mac_address) as client:
+  File "C:\Python311\Lib\site-packages\bleak\__init__.py", line 433, in __aenter__
+    await self.connect()
+  File "C:\Python311\Lib\site-packages\bleak\__init__.py", line 471, in connect
+    return await self._backend.connect(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\bleak\backends\winrt\client.py", line 244, in connect
+    raise BleakDeviceNotFoundError(
+bleak.exc.BleakDeviceNotFoundError: Device with address 010:02:12:65:12:36 was not found.
+PS C:\Users\j\OneDrive\Documents\Projects\MQTT> & C:/Python311/python.exe c:/Users/j/OneDrive/Documents/Projects/MQTT/Client/ble/get_data.py
+c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\get_data.py:27: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Traceback (most recent call last):
+  File "c:\Users\j\OneDrive\Documents\Projects\MQTT\Client\ble\get_data.py", line 28, in <module>
+    loop.run_until_complete(run(mac_address, service_uuid, characteristic_uuid))
+  File "C:\Python311\Lib\asyncio\base_events.py", line 637, in run_until_complete
+    self.run_forever()
+  File "C:\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Python311\Lib\asyncio\base_events.py", line 604, in run_forever
+    self._run_once()
+  File "C:\Python311\Lib\asyncio\base_events.py", line 1873, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Python311\Lib\asyncio\windows_events.py", line 808, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

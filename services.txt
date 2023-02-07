@@ -1,0 +1,8 @@
+INFO:__main__:Connected: True
+INFO:__main__:[Service] 00001800-0000-1000-8000-00805f9b34fb (Handle: 1): Generic Access Profile
+INFO:__main__:  [Characteristic] 00002a00-0000-1000-8000-00805f9b34fb (Handle: 2): Device Name (read), Value: b''
+INFO:__main__:  [Characteristic] 00002a01-0000-1000-8000-00805f9b34fb (Handle: 4): Appearance (read), Value: b'\x00\x00'
+INFO:__main__:[Service] 00001801-0000-1000-8000-00805f9b34fb (Handle: 6): Generic Attribute Profile
+INFO:__main__:[Service] 0000ffe0-0000-1000-8000-00805f9b34fb (Handle: 7): Vendor specific
+INFO:__main__:  [Characteristic] 0000ffe1-0000-1000-8000-00805f9b34fb (Handle: 8): Vendor specific (read,write-without-response,write,notify), Value: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO:__main__:          [Descriptor] 00002902-0000-1000-8000-00805f9b34fb (Handle: 10): Client Characteristic Configuration) | Value: b'\x00\x00'

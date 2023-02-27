@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">dav1nc11_s_application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_help">Help</string>
+<string name="lbl_80">80%</string>
+<string name="lbl_login">LogIn</string>
+<string name="lbl_username">username</string>
+<string name="lbl_register">Register</string>
+<string name="msg_tap_to_refresh">Tap to refresh the reading</string>
+<string name="lbl_password">password</string>
+<string name="lbl_tank">Tank</string>
+</resources>

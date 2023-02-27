@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gettingStartedMobileVM" type="com.davncsapplication.app.modules.gettingstartedmobile.data.viewmodel.GettingStartedMobileVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectanglethirtyfour"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <ImageView android:id="@+id/imageLogo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_202pxh"
+            android:layout_marginEnd="@dimen/_38pxh"
+            android:layout_marginStart="@dimen/_38pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_202pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle33}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle33"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroupfour"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_32pxv"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_38pxh"
+            android:layout_marginTop="@dimen/_47pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroupFour"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingStart="@dimen/_20pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:singleLine="true"
+                android:text="@{gettingStartedMobileVM.gettingStartedMobileModel.txtGroupFour}"
+                style="@style/txtRoundedOutline" tools:text="@string/lbl_username"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroupThree"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingStart="@dimen/_22pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:singleLine="true"
+                android:text="@{gettingStartedMobileVM.gettingStartedMobileModel.txtGroupThree}"
+                style="@style/txtRoundedOutline_1" tools:text="@string/lbl_password"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnLogin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_190pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_login"/>
+            <LinearLayout android:id="@+id/linearRowhelp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_36pxh"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHelp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.36"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{gettingStartedMobileVM.gettingStartedMobileModel.txtHelp}"
+                    style="@style/txtInterregular20" tools:text="@string/lbl_help"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRegister"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_144pxh"
+                    android:layout_weight="0.64"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{gettingStartedMobileVM.gettingStartedMobileModel.txtRegister}"
+                    style="@style/txtInterregular20" tools:text="@string/lbl_register"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

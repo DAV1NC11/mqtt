@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="waterMobileVM" type="com.davncsapplication.app.modules.watermobile.data.viewmodel.WaterMobileVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearWatermobile"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle">
+        <ImageView android:id="@+id/imageRectangleSix"
+            android:layout_height="@dimen/_43pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_677pxv"
+            android:layout_width="@dimen/_43pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle6"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+        <LinearLayout android:id="@+id/linearColumncapatwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_158pxv"
+            android:layout_weight="0.88" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackcapatwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_357pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_268pxh">
+                <ImageView android:id="@+id/imageCapaTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_357pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_capa2"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_capa2"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtReading"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_121pxv"
+                    android:layout_marginEnd="@dimen/_111pxh"
+                    android:layout_marginStart="@dimen/_111pxh"
+                    android:layout_marginTop="@dimen/_121pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{waterMobileVM.waterMobileModel.txtReading}"
+                    style="@style/txtIntersemibold20" tools:text="@string/lbl_80"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowrectangletwentyfour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_80pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnrectangletwentyfour"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageRefreshbtn"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_43pxh"
+                        android:layout_marginEnd="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle24"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle24"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowrectangleten"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_27pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageRectangleTen"
+                            android:layout_height="@dimen/_15pxh"
+                            android:layout_width="@dimen/_15pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle10"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle10"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTaptorefresh"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_weight="0.86"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{waterMobileVM.waterMobileModel.txtTaptorefresh}"
+                            style="@style/txtInterextralight8" tools:text="@string/msg_tap_to_refresh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumntank"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_39pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTank"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{waterMobileVM.waterMobileModel.txtTank}"
+                        style="@style/txtInterextralight20" tools:text="@string/lbl_tank"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtReadingz"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{waterMobileVM.waterMobileModel.txtReadingz}"
+                        style="@style/txtInterextralight16" tools:text="@string/lbl_80"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowrectanglefive"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageRectangleFive"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle5"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5"/>
+                <ImageView android:id="@+id/imageRectangleFour"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_width="@dimen/_50pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle4"/>
+                <ImageView android:id="@+id/imageCart"
+                    android:layout_height="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_36pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_cart"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_cart"/>
+                <ImageView android:id="@+id/imageSettings"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle8"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle8"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
